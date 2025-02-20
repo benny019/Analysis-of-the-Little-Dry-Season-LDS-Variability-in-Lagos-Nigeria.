@@ -38,7 +38,8 @@ Anticipating the steps involved in the calculation, I realized a need to extract
 - Created a helper column: I created a new column named “grouping” and added a formula to group the rows in sets of 5 “=INT((ROW(A1)-1)/5)+1”
 - Created Pivot Table:  Created a Pivot table adding the helper column (“grouping”) to the Rows section, “rainfall amount” to the Values section and set it to calculate the Average.
 - Edited Table: The result of the Pivot table was copied and repasted to be made editable. Then, the Row Label column with values 1, 2, 3, 4… 73 was changed to 5, 10, 15, 20… 365 representing days of year in pentads and the Average of Rainfall Amount column was renamed 5-day Mean Rainfall.
-**Pivot Table**        **Edited Table**
+
+**Pivot Table**    |    **Edited Table**
 :-------------------:|:----------------------:
 ![](pivot_table.png)|![](pivot_table_edit.png)
 
