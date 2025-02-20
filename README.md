@@ -1,6 +1,7 @@
 # Analysis-of-the-Little-Dry-Season-LDS-Variability-in-Lagos-Nigeria from 2004 to 2023.
 
 ## Introduction
+![](LDS_intro.png)
 This project, conducted as part of my industrial training in Meteorology and Climate Science, analyzes the Little Dry Season (LDS) in Lagos, Nigeria. Motivated by a prolonged dry period observed during my internship (July-November), I investigated the temporal variability of the LDS over 20 years (2004-2023) using available rainfall data.
 
 ## Skills Demonstrated
@@ -17,12 +18,12 @@ This project aimed to analyze the temporal variability of key LDS characteristic
 •	Identifying extreme values and their occurrence years.
 
 ## Data Sourcing
-This study used daily rainfall data from the Copernicus ERA5 Reanalysis dataset, accessed via the Climate In Africa website. ERA5 is a high-resolution global atmospheric reanalysis from ECMWF, combining various observational sources.
-Data Sourcing 2
-This study utilized daily rainfall data from the Copernicus ERA5 Reanalysis dataset, accessed through the Climate In Africa website. The ERA5 dataset is a high-resolution global atmospheric reanalysis produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). It combines observations from a wide range of sources, including satellite data, weather stations, and numerical weather prediction models, to provide a comprehensive and consistent dataset of meteorological variables. The Climate In Africa website provides access to gridded ERA5 data for the African continent, enabling the extraction of daily rainfall data for the specific location under investigation.
+This study used daily rainfall data from the Copernicus ERA5 Reanalysis dataset, accessed via the Climate In Africa website. ERA5 is a high-resolution global atmospheric reanalysis produced by the European Centre for Medium-Range Weather Forecasts (ECMWF), combining various observational sources.
 
 ## Data Preparation
 The raw daily rainfall data for Lagos from 2004 to 2023 was extracted and saved locally. I began the cleaning process by using Excel to explore the dataset, gaining insights into its structure and organization. This initial review guided my assessment of its relevance and quality using the ROCCC framework (Reliable, Original, Comprehensive, Current, and Cited). To ensure accuracy, I conducted an in-depth exploration, including data type validation, consistency checks, range verification, and identification of missing values and duplicates.
+**Dataset**
+![](original_dataset.png)
 
 ## Limitations
 During exploration, I discovered that the daily rainfall values for 2017 were identical throughout the year. Despite redownloading the dataset to resolve the issue, the anomaly persisted. Consequently, I proceeded with the analysis while omitting data from 2017.
@@ -34,15 +35,22 @@ LDS onset and retreat would be derived from the slope of the cumulative percenta
 Anticipating the steps involved in the calculation, I realized a need to extract the data for each year into separate sheets before proceeding. 
 
 1. Calculation of the 5-Day Mean Rainfall: Daily rainfall data were grouped into 5-day periods. The average daily rainfall for each 5-day period was calculated to smooth out short-term fluctuations and highlight broader rainfall trends. This was done using a combination of functions like “ROW()”, “INT()”, “helper column” and Pivot table in Excel.
-•	Add a helper column: I created a new column named “grouping” and added a formula to group the rows in sets of 5 “=INT((ROW(A1)-1)/5)+1”
-•	Create Pivot Table:  Created a Pivot table adding the helper column (“grouping”) to the Rows section, “rainfall amount” to the Values section and set it to calculate the Average.
-•	Edit Table: The result of the Pivot table was copied and repasted to be made editable. Then, the Row Label column with values 1, 2, 3, 4… 73 was changed to 5, 10, 15, 20… 365 representing days of year in pentads and the Average of Rainfall Amount column was renamed 5-day Mean Rainfall.  
+- Created a helper column: I created a new column named “grouping” and added a formula to group the rows in sets of 5 “=INT((ROW(A1)-1)/5)+1”
+- Created Pivot Table:  Created a Pivot table adding the helper column (“grouping”) to the Rows section, “rainfall amount” to the Values section and set it to calculate the Average.
+- Edited Table: The result of the Pivot table was copied and repasted to be made editable. Then, the Row Label column with values 1, 2, 3, 4… 73 was changed to 5, 10, 15, 20… 365 representing days of year in pentads and the Average of Rainfall Amount column was renamed 5-day Mean Rainfall.
+**Pivot Table**        **Edited Table**
+:-------------------:|:----------------------:
+![](pivot_table.png)|![](pivot_table_edit.png)
 
-2. Calculation of Percentage Contribution: For each 5-day period, the percentage contribution to the annual total rainfall was calculated for each year. This was achieved by dividing the 5-day mean rainfall by the annual total rainfall and multiplying by 100. The annual total rainfall was deducted from the Pivot Table using sum of rainfall amount. 
+2. Calculation of Percentage Contribution: For each 5-day period, the percentage contribution to the annual total rainfall was calculated for each year. This was achieved by dividing the 5-day mean rainfall by the annual total rainfall and multiplying by 100. The annual total rainfall was deducted from the Pivot Table using sum of rainfall amount.
+![](percentage_contribution_calculation.png)
 
 3. Calculation of Cumulative Percentage Rainfall: The cumulative percentage of rainfall received up to the end of each 5-day period was calculated by summing the percentage contribution of each 5-day period throughout the year. Where Y is the Percentage Contribution Column and Z is the Cumulative Percentage Column to be calculated, the formula used is: “Z2 = Y2”, “Z3 = Y3 + Z2” as seen below. 
+![](cumulative percentage_calculation.png)
+
 Compilation
-The processes for each step of the calculation were repeated for all the years (2004 to 2023) and the results was compiled in a new sheet named computed data. 
+The processes for each step of the calculation were repeated for all the years (2004 to 2023) and the results was compiled in a new sheet named **computed data.** 
+![](computed_data.png)
 
 ## Data Analysis / Visualization
 Now that I have the data processed and compiled, I delved into analyzing to derive quality information relevant to the aim of the research. I would first identify the onset and retreat dates of LDS for each year from the available data from which I will then derive insights about other LDS characteristics
@@ -50,10 +58,14 @@ Now that I have the data processed and compiled, I delved into analyzing to deri
 - Identification of LDS Onset and Retreat: The onset and retreat of the LDS were identified by visually inspecting the cumulative rainfall graph. The onset was marked by a significant decrease in the slope of the curve (first point of maximum negative curvature), indicating a reduction in the rate of rainfall accumulation. The retreat was marked by a renewed increase in the slope (second point of maximum positive curvature), signifying the resumption of heavier rainfall.
 
 - Calculation of other LDS Characteristics: After identifying the onset and retreat dates of the LDS for each year within the study period (2004-2023), these dates were compiled in a table. This information was then used to calculate other key rainfall characteristics within the scope of this study, including length of LDS, number of rainy days, rainfall amount and intensity during LDS which would subsequently be compared across the 20-year period.
-Length of LDS = LDS Retreat Date – LDS Onset Date
-Rainfall Amount = Sum of daily rainfall amounts for days within the identified LDS period.
-Average Daily Rainfall / LDS Intensity = Divide the total rainfall amount within the LDS by the number of days within that period.
+**Length of LDS = LDS Retreat Date – LDS Onset Date**
+![](calculation_of_LDS_intensity.png)
 
+Rainfall Amount = Sum of daily rainfall amounts for days within the identified LDS period.
+![](calculation_of_rainfall_amount.png)
+
+LDS Intensity (Average Daily Rainfall) = rainfall amount / number of days.
+![](calculation_of_LDS_intensity.png)
 
 ## Visualization
 Different visuals were created to visualize the trend, variability and comparison of each LDS characteristics across the years. A tree map was used to visualize the intensity of the LDS across the 20-year period, with larger squares representing more intense dry seasons.
