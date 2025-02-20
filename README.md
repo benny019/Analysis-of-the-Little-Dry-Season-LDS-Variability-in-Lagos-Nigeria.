@@ -80,12 +80,12 @@ Onset Dates | Retreat Dates
 ![](onset_dates.png)|![](retreat_dates.png)
 
 Lengths of LDS | Rainfall Amount During LDS
-:-------------:|:--------:
-![](LDS_length.png)|![](rainfall_amount.png)
+:--------------:|:--------------:
+![](LDS_Length.png)|![](rainfall_amount.png)
 
 LDS Intensity | No of Rain Days 
-:--------------:|:-------------:
-![](LDS_intensity.png)|![](No_of_Rain_Days.png)
+:--------------:|:--------------:
+![](LDS_Intensity.png)|![](No_of_Rain_Days.png)
 
 The analysis of ERA5 reanalysis data (2004-2023) revealed significant inter-annual variability in Lagos' Little Dry Season (LDS) characteristics.
 **1. Onset & Retreat of LDS:** LDS onset varied by up to 50 days (July 14th/15th - September 2nd), with similar variation in retreat dates.
