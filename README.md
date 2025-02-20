@@ -47,7 +47,7 @@ Anticipating the steps involved in the calculation, I realized a need to extract
 ![](percentage_contribution_calculation.png)
 
 3. Calculation of Cumulative Percentage Rainfall: The cumulative percentage of rainfall received up to the end of each 5-day period was calculated by summing the percentage contribution of each 5-day period throughout the year. Where Y is the Percentage Contribution Column and Z is the Cumulative Percentage Column to be calculated, the formula used is: “Z2 = Y2”, “Z3 = Y3 + Z2” as seen below. 
-![](cumulative percentage_calculation.png)
+![](cumulative_percentage_calculation.png)
 
 Compilation
 The processes for each step of the calculation were repeated for all the years (2004 to 2023) and the results was compiled in a new sheet named **computed data.** 
