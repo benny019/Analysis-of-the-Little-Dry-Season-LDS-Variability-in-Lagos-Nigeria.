@@ -1,6 +1,5 @@
 # Analysis-of-the-Little-Dry-Season-LDS-Variability-in-Lagos-Nigeria from 2004 to 2023.
-This research analyzes the temporal variability of key LDS characteristics in Lagos from 2004 to 2023 using the 5-Day Cumulative Percentage Mean Rainfall method.
-Analysis of the Little Dry Season (LDS) Variability in Lagos, Nigeria (2004-2023)
+
 ## Introduction
 This project, conducted as part of my industrial training in Meteorology and Climate Science, analyzes the Little Dry Season (LDS) in Lagos, Nigeria. Motivated by a prolonged dry period observed during my internship (July-November), I investigated the temporal variability of the LDS over 20 years (2004-2023) using available rainfall data.
 
