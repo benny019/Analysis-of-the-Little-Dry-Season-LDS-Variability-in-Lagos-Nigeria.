@@ -34,22 +34,23 @@ LDS onset and retreat would be derived from the slope of the cumulative percenta
 ## Data Processing: Computation of the 5-Day Cumulative Percentage Mean Rainfall
 Anticipating the steps involved in the calculation, I realized a need to extract the data for each year into separate sheets before proceeding. 
 
-1. Calculation of the 5-Day Mean Rainfall: Daily rainfall data were grouped into 5-day periods. The average daily rainfall for each 5-day period was calculated to smooth out short-term fluctuations and highlight broader rainfall trends. This was done using a combination of functions like “ROW()”, “INT()”, “helper column” and Pivot table in Excel.
-- Created a helper column: I created a new column named “grouping” and added a formula to group the rows in sets of 5 “=INT((ROW(A1)-1)/5)+1”
-- Created Pivot Table:  Created a Pivot table adding the helper column (“grouping”) to the Rows section, “rainfall amount” to the Values section and set it to calculate the Average.
-- Edited Table: The result of the Pivot table was copied and repasted to be made editable. Then, the Row Label column with values 1, 2, 3, 4… 73 was changed to 5, 10, 15, 20… 365 representing days of year in pentads and the Average of Rainfall Amount column was renamed 5-day Mean Rainfall.
+**1. Calculation of the 5-Day Mean Rainfall:** Daily rainfall data were grouped into 5-day periods. The average daily rainfall for each 5-day period was calculated to smooth out short-term fluctuations and highlight broader rainfall trends. This was done using a combination of functions like “ROW()”, “INT()”, “helper column” and Pivot table in Excel.
+**- Created a helper column:** I created a new column named “grouping” and added a formula to group the rows in sets of 5 “=INT((ROW(A1)-1)/5)+1”
+![](grouping.png)
+**- Created Pivot Table:** Created a Pivot table adding the helper column (“grouping”) to the Rows section, “rainfall amount” to the Values section and set it to calculate the Average.
+**- Edited Table:** The result of the Pivot table was copied and repasted to be made editable. Then, the Row Label column with values 1, 2, 3, 4… 73 was changed to 5, 10, 15, 20… 365 representing days of year in pentads and the Average of Rainfall Amount column was renamed 5-day Mean Rainfall.
 
 **Pivot Table**    |    **Edited Table**
 :-------------------:|:----------------------:
 ![](pivot_table.png)|![](pivot_table_edit.png)
 
-2. Calculation of Percentage Contribution: For each 5-day period, the percentage contribution to the annual total rainfall was calculated for each year. This was achieved by dividing the 5-day mean rainfall by the annual total rainfall and multiplying by 100. The annual total rainfall was deducted from the Pivot Table using sum of rainfall amount.
+**2. Calculation of Percentage Contribution:** For each 5-day period, the percentage contribution to the annual total rainfall was calculated for each year. This was achieved by dividing the 5-day mean rainfall by the annual total rainfall and multiplying by 100. The annual total rainfall was deducted from the Pivot Table using sum of rainfall amount.
 ![](percentage_contribution_calculation.png)
 
-3. Calculation of Cumulative Percentage Rainfall: The cumulative percentage of rainfall received up to the end of each 5-day period was calculated by summing the percentage contribution of each 5-day period throughout the year. Where Y is the Percentage Contribution Column and Z is the Cumulative Percentage Column to be calculated, the formula used is: “Z2 = Y2”, “Z3 = Y3 + Z2” as seen below. 
+**3. Calculation of Cumulative Percentage Rainfall:** The cumulative percentage of rainfall received up to the end of each 5-day period was calculated by summing the percentage contribution of each 5-day period throughout the year. Where Y is the Percentage Contribution Column and Z is the Cumulative Percentage Column to be calculated, the formula used is: “Z2 = Y2”, “Z3 = Y3 + Z2” as seen below. 
 ![](cumulative_percentage_calculation.png)
 
-Compilation
+# Compilation
 The processes for each step of the calculation were repeated for all the years (2004 to 2023) and the results was compiled in a new sheet named **computed data.** 
 ![](computed_data.png)
 
