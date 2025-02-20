@@ -1,7 +1,7 @@
 # Analysis-of-the-Little-Dry-Season-LDS-Variability-in-Lagos-Nigeria from 2004 to 2023.
 
-## Introduction
 ![](LDS_intro.png)
+## Introduction
 This project, conducted as part of my industrial training in Meteorology and Climate Science, analyzes the Little Dry Season (LDS) in Lagos, Nigeria. Motivated by a prolonged dry period observed during my internship (July-November), I investigated the temporal variability of the LDS over 20 years (2004-2023) using available rainfall data.
 
 ## Skills Demonstrated
@@ -56,28 +56,43 @@ The processes for each step of the calculation were repeated for all the years (
 ## Data Analysis / Visualization
 Now that I have the data processed and compiled, I delved into analyzing to derive quality information relevant to the aim of the research. I would first identify the onset and retreat dates of LDS for each year from the available data from which I will then derive insights about other LDS characteristics
 
-- Identification of LDS Onset and Retreat: The onset and retreat of the LDS were identified by visually inspecting the cumulative rainfall graph. The onset was marked by a significant decrease in the slope of the curve (first point of maximum negative curvature), indicating a reduction in the rate of rainfall accumulation. The retreat was marked by a renewed increase in the slope (second point of maximum positive curvature), signifying the resumption of heavier rainfall.
+**- Identification of LDS Onset and Retreat:** The onset and retreat of the LDS were identified by visually inspecting the cumulative rainfall graph. The onset was marked by a significant decrease in the slope of the curve (first point of maximum negative curvature), indicating a reduction in the rate of rainfall accumulation. The retreat was marked by a renewed increase in the slope (second point of maximum positive curvature), signifying the resumption of heavier rainfall.
+2004 Onset and Retreat Dates | 2 Onset and Retreat Dates
+:--------------------:|:-------------------:
+![](2004_cumulative_rainfall_chart.png)|![](2020_cumulative_rainfall_chart.png)
 
-- Calculation of other LDS Characteristics: After identifying the onset and retreat dates of the LDS for each year within the study period (2004-2023), these dates were compiled in a table. This information was then used to calculate other key rainfall characteristics within the scope of this study, including length of LDS, number of rainy days, rainfall amount and intensity during LDS which would subsequently be compared across the 20-year period.
+**- Calculation of other LDS Characteristics:** After identifying the onset and retreat dates of the LDS for each year within the study period (2004-2023), these dates were compiled in a table. This information was then used to calculate other key rainfall characteristics within the scope of this study, including length of LDS, number of rainy days, rainfall amount and intensity during LDS which would subsequently be compared across the 20-year period.
 **Length of LDS = LDS Retreat Date – LDS Onset Date**
-![](calculation_of_LDS_intensity.png)
+![](calculation_of_LDS_length.png)
 
-Rainfall Amount = Sum of daily rainfall amounts for days within the identified LDS period.
+**Rainfall Amount = Sum of daily rainfall amounts for days within the identified LDS period.**
 ![](calculation_of_rainfall_amount.png)
 
-LDS Intensity (Average Daily Rainfall) = rainfall amount / number of days.
+**LDS Intensity (Average Daily Rainfall) = rainfall amount / number of days.**
 ![](calculation_of_LDS_intensity.png)
 
 ## Visualization
 Different visuals were created to visualize the trend, variability and comparison of each LDS characteristics across the years. A tree map was used to visualize the intensity of the LDS across the 20-year period, with larger squares representing more intense dry seasons.
 
-# Results
+## Results
+Onset Dates | Retreat Dates
+:--------------:|:-------------:
+![](onset_dates.png)|![](retreat_dates.png)
+
+Lengths of LDS | Rainfall Amount During LDS
+:-------------:|:--------:
+![](LDS_length.png)|![](rainfall_amount.png)
+
+LDS Intensity | No of Rain Days 
+:--------------:|:-------------:
+![](LDS_intensity.png)|![](No_of_Rain_Days.png)
+
 The analysis of ERA5 reanalysis data (2004-2023) revealed significant inter-annual variability in Lagos' Little Dry Season (LDS) characteristics.
-**•	Onset/Retreat:** LDS onset varied by up to 50 days (July 14th/15th - September 2nd), with similar variation in retreat dates.
-**•	Length:** LDS duration ranged from 10 to 50 days (average 26 days), impacting the length of the wet season.
-**•	Rainfall:** Total rainfall during the LDS varied considerably (1.79 - 18.39 mm), affecting water availability and agricultural practices.
-**•	Rain Days:** The number of rain days (≥ 0.85 mm) fluctuated between 0 and 6, influencing vegetation health and water recharge.
-**•	Intensity:** LDS intensity, measured as average daily rainfall, was highly variable. A tree map (Fig. X) highlighted years with the most (e.g., 2020, 2004) and least (e.g., 2018, 2021) intense LDS periods.
+**1. Onset & Retreat of LDS:** LDS onset varied by up to 50 days (July 14th/15th - September 2nd), with similar variation in retreat dates.
+**2. Length of LDS:** LDS duration ranged from 10 to 50 days (average 26 days), impacting the length of the wet season.
+**3. Rainfall Amount during LDS:** Total rainfall during the LDS varied considerably (1.79 - 18.39 mm), affecting water availability and agricultural practices.
+**4. Number of Rain Days:** The number of rain days (≥ 0.85 mm) fluctuated between 0 and 6, influencing vegetation health and water recharge.
+**5. LDS Intensity:** LDS intensity, measured as average daily rainfall, was highly variable. A tree map (Fig. X) highlighted years with the most (e.g., 2020, 2004) and least (e.g., 2018, 2021) intense LDS periods.
 
 ## Discussion and Conclusion
 These findings demonstrate the dynamic nature of the LDS in Lagos and its potential impact on various sectors. The observed variability in onset/retreat, length, rainfall, and intensity can have significant consequences for agriculture, water resources, and disaster preparedness. The increased variability in recent years suggests potential shifts in LDS patterns, possibly due to climate change or other factors. Further research is needed to investigate these drivers and their implications for Lagos' ecosystems and human activities.
@@ -86,3 +101,4 @@ These findings demonstrate the dynamic nature of the LDS in Lagos and its potent
 •	Future studies could investigate the relationship between the LDS and other meteorological variables (e.g., temperature, humidity).
 •	Further research is needed to explore the potential impacts of climate change on the LDS in Lagos.
 
+![](thank_you.png)
