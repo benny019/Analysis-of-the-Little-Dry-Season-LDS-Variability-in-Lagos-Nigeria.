@@ -1,4 +1,4 @@
-# Analysis-of-the-Little-Dry-Season-LDS-Variability-in-Lagos-Nigeria from 2004 to 2023.
+# Analysis-of-the-Little-Dry-Season-Variability-in-Lagos-Nigeria from 2004 to 2023.
 
 ![](LDS_intro.png)
 ## Introduction
