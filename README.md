@@ -26,7 +26,7 @@ The raw daily rainfall data for Lagos from 2004 to 2023 was extracted and saved 
 **Dataset**
 ![](original_dataset.png)
 
-***Note:** The dataset file is available in the repository files as **rainfall_data_2004-23.xlsx***
+***Note:** The dataset file is available in the repository files as **rainfall_data_2004-2023.xlsx***
 
 ## Limitations
 During exploration, I discovered that the daily rainfall values for 2017 were identical throughout the year. Despite redownloading the dataset to resolve the issue, the anomaly persisted. Consequently, I proceeded with the analysis while omitting data from 2017.
