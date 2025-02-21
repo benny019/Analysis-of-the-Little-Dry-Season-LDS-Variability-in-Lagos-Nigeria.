@@ -2,7 +2,7 @@
 
 ![](LDS_intro.png)
 ## Introduction
-This project, conducted as part of my industrial training in Meteorology and Climate Science, analyzes the Little Dry Season (LDS) in Lagos, Nigeria. Motivated by a prolonged dry period observed during my internship (July-November), I investigated the temporal variability of the LDS over 20 years (2004-2023) using available rainfall data.
+This research, conducted as part of my industrial training in Meteorology and Climate Science, analyzes the Little Dry Season (LDS) in Lagos, Nigeria. Motivated by a prolonged dry period observed during my internship (July-November), I investigated the temporal variability of the LDS over 20 years (2004-2023) using available rainfall data.
 
 ## Skills Demonstrated
 This project combined data analysis and meteorological skills. I extracted and processed ERA5 rainfall data from the Climate in Africa website, deriving key metrics like 5-day mean and cumulative rainfall. Time series and statistical analyses revealed trends and variability in LDS characteristics. Visualizations, including a tree map and cumulative rainfall line graphs and bar charts communicated these insights. My meteorological background informed the interpretation of LDS characteristics. Technically, I used Excel, SQL, and Tableau.
